@@ -2,9 +2,8 @@ import csv
 import datetime as dt
 from pathlib import Path
 
-from scrapy.exceptions import DropItem
-
 from pep_parse.constants import DATETIME_FORMAT, FILE_NAME, RESULTS_PEP
+from scrapy.exceptions import DropItem
 
 BASE_DIR = Path(__file__).parent.parent
 
