@@ -19,5 +19,5 @@ ALLOWED_STATUSES = ('Active',
                     'Superseded',
                     'Withdrawn',
                     'Draft',
-                    'Total'
-)
+                    'Total',
+                    )

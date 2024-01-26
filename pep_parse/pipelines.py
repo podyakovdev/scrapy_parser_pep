@@ -10,6 +10,7 @@ BASE_DIR = Path(__file__).parent.parent
 
 
 class PepParsePipeline:
+
     def open_spider(self, spider):
         self.status_count_total = {
             'Active': 0,
