@@ -6,7 +6,9 @@ class PepParse:
     @classmethod
     def from_crawler(cls, crawler):
         parser = cls()
-        crawler.signals.connect(parser.spider_opened, signal=signals.spider_opened)
+        crawler.signals.connect(
+            parser.spider_opened, signal=signals.spider_opened
+        )
         return parser
 
     def spider_opened(self, spider):

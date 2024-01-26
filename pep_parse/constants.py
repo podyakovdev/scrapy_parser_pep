@@ -11,12 +11,13 @@ DATETIME_FORMAT = '%Y-%m-%d_%H-%M-%S'
 FILE_NAME = 'status_summary_{}.csv'
 
 ALLOWED_STATUSES = ('Active',
-                  'Accepted',
-                  'Deferred',
-                  'Final',
-                  'Provisional',
-                  'Rejected',
-                  'Superseded',
-                  'Withdrawn',
-                  'Draft',
-                  'Total')
+                    'Accepted',
+                    'Deferred',
+                    'Final',
+                    'Provisional',
+                    'Rejected',
+                    'Superseded',
+                    'Withdrawn',
+                    'Draft',
+                    'Total'
+)
