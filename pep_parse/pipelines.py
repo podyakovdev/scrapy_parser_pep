@@ -2,8 +2,9 @@ import csv
 import datetime as dt
 from pathlib import Path
 
-from pep_parse.constants import DATETIME_FORMAT, FILE_NAME, RESULTS_PEP
 from scrapy.exceptions import DropItem
+
+from pep_parse.constants import DATETIME_FORMAT, FILE_NAME, RESULTS_PEP
 
 BASE_DIR = Path(__file__).parent.parent
 
@@ -24,7 +25,10 @@ class PepParsePipeline:
         }
 
     def process_item(self, item, spider):
-        status = item['status']
+        if 'status' in item:
+            status = item['status']
+        else:
+            raise KeyError()
         try:
             self.status_count_total[status] += 1
             self.status_count_total['Total'] += 1

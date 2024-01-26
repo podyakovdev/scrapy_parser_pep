@@ -10,7 +10,7 @@ DATETIME_FORMAT = '%Y-%m-%d_%H-%M-%S'
 
 FILE_NAME = 'status_summary_{}.csv'
 
-ALLOWED_STATUS = ('Active',
+ALLOWED_STATUSES = ('Active',
                   'Accepted',
                   'Deferred',
                   'Final',
